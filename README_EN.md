@@ -256,7 +256,7 @@ MistTrack provides multiple functions, covering transaction monitoring, risk ass
 
 ![](./res/p20.png)
 
-s of now, MistTrack has accumulated over 300 million address labels, 1,000+ on-chain entities, 500,000+ threat intelligence data points, and 90 million+ risky addresses. The system supports tracking on 18 mainstream public blockchains and hundreds of different tokens, covering a wide range of asset types and on-chain ecosystems. MistTrack also supports cross-chain tracing, currently compatible with 15 mainstream cross-chain bridge protocols and tools including Chainflip, AllbridgeCore, and LIFI, with continuous expansion underway. Backed by this massive and ever-updating data foundation, MistTrack provides users with strong technical support to tackle complex and evolving on-chain security threats.
+as of now, MistTrack has accumulated over 300 million address labels, 1,000+ on-chain entities, 500,000+ threat intelligence data points, and 90 million+ risky addresses. The system supports tracking on 18 mainstream public blockchains and hundreds of different tokens, covering a wide range of asset types and on-chain ecosystems. MistTrack also supports cross-chain tracing, currently compatible with 15 mainstream cross-chain bridge protocols and tools including Chainflip, AllbridgeCore, and LIFI, with continuous expansion underway. Backed by this massive and ever-updating data foundation, MistTrack provides users with strong technical support to tackle complex and evolving on-chain security threats.
 
 Core functions of MistTrack include:
 
