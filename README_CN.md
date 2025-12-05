@@ -1,5 +1,10 @@
 ![](./res/p0.png)
 
+| 日期 | 更新日志 |
+| --- | --- |
+| 2025/12/05 | 更新 `MistTrack 介绍`、`Bridge 分析`、`案例`章节 |
+| 2025/08/15 | 中英文版发布 |
+
 **目录**
 
 - [引子](#引子)
@@ -13,13 +18,13 @@
     - [MistTrack 使用](#misttrack-使用)
     - [社区工具](#社区工具)
   - [常见的资金流动模式](#常见的资金流动模式)
-    - [剥离链（Peel Chain）](#剥离链（peel-chain）)
+    - [剥离链（Peel Chain）](#剥离链peel-chain)
     - [一对多分发](#一对多分发)
     - [多跳转移](#多跳转移)
     - [混币器使用](#混币器使用)
     - [跨链桥跳转](#跨链桥跳转)
     - [多对一归集](#多对一归集)
-    - [P2P / OTC](#p2p-/-otc)
+    - [P2P / OTC](#p2p--otc)
   - [被盗了怎么办](#被盗了怎么办)
     - [止损优先](#止损优先)
     - [保护现场](#保护现场)
@@ -47,6 +52,10 @@
     - [地址标签与链下身份](#地址标签与链下身份)
     - [AI 工具与分析](#ai-工具与分析)
   - [案例](#案例)
+    - [案例一 剥离链（Peel Chain）追踪](#案例一-剥离链peel-chain追踪)
+    - [案例二 波场（TRON）网络追踪](#案例二-波场tron网络追踪)
+    - [案例三 通过 Hyperunit 循环清洗 BTC](#案例三-通过-hyperunit-循环清洗-btc)
+    - [案例四 Stargate Finance 跨链资金来源分析](#案例四-stargate-finance-跨链资金来源分析)
   - [资产冻结与追回的建议](#资产冻结与追回的建议)
 - [结语](#结语)
 - [免责声明](#免责声明)
@@ -254,7 +263,7 @@ MistTrack 为用户提供多种功能，涵盖交易监控、风险评估、地�
 
 ![](./res/p20.png)
 
-截止目前，MistTrack 已积累三亿多个地址标签，1,000 \+ 链上实体，50 万 \+ 威胁情报数据，9,000 万 \+ 风险地址。系统支持 18 条主流公链和数百种不同的代币追踪，覆盖广泛的资产类型与链上生态。同时，MistTrack 也支持跨链追踪能力。现已兼容包括 Chainflip、AllbridgeCore、LIFI 等在内的 15 种主流跨链桥协议与工具，并持续拓展中。依托这一庞大、不断更新的数据基础，MistTrack 正在为用户提供强有力的技术支撑，助力应对复杂多变的链上安全威胁。以下是 MistTrack 提供的核心功能：
+截止目前，MistTrack 已积累四亿多个地址标签，1,000 \+ 链上实体，50 万 \+ 威胁情报数据，9,000 万 \+ 风险地址。系统支持 18 条主流公链和数百种不同的代币追踪，覆盖广泛的资产类型与链上生态。同时，MistTrack 也支持跨链追踪能力。现已兼容包括 Chainflip、AllbridgeCore、LIFI 等在内的多种主流跨链桥协议与工具，并持续拓展中。依托这一庞大、不断更新的数据基础，MistTrack 正在为用户提供强有力的技术支撑，助力应对复杂多变的链上安全威胁。以下是 MistTrack 提供的核心功能：
 
 * AML 风险评分：MistTrack 主要从地址所属实体、地址历史交易活动、慢雾恶意钱包地址库三方面为其计算 AML 风险评分。当地址所属实体为高风险主体（如混币平台）或地址与已知的风险主体存在资金来往时，系统会将该地址标记为风险地址。同时，结合慢雾恶意钱包地址库中的数据集，MistTrack 会对已核实的勒索、盗币、钓鱼欺诈等非法行为的涉案地址进行风险标记。用户可以像专业合规官一样，对每个钱包地址进行风险分析，并判断该地址是否涉及非法资金。用户还可以通过点击“风险报告”按钮，一键获取该地址的风险分析报告。  
 * 地址标签：MistTrack 不仅能够识别地址所属的实体，如 Coinbase 或 Binance，还可以定位多个链上和链下的标签，如 ENS、MEV Bots、DeFi Whales 等，以及该地址使用的具体钱包 App，如 imToken 或 MetaMask。通过 MistTrack 的地址标签功能，用户将能够更全面地了解相关地址的背景信息。  
@@ -265,9 +274,7 @@ MistTrack 为用户提供多种功能，涵盖交易监控、风险评估、地�
 
 ![](./res/p21.png)
 
-同时，为了提供更便捷的地址分析，我们开发了 MistTrack OpenAPI，供开发人员在其应用程序中使用：
-
-* OpenAPI 接口服务：通过调用 OpenAPI，MistTrack 将返回给定地址的标签列表、地址概览、风险评分、风险详细信息列表、交易调查结果、交易行为分析结果、地址痕迹分析结果和交易对手分析结果。
+同时，为了提供更便捷的地址分析，MistTrack 开发了 OpenAPI，供开发人员在其应用程序中使用，通过调用 OpenAPI，MistTrack 将返回给定地址的标签列表、地址概览、风险评分、风险详细信息列表、交易调查结果、交易行为分析结果、地址痕迹分析结果和交易对手分析结果。
 
 ### MistTrack 使用
 
@@ -563,6 +570,9 @@ OTC（Over-The-Counter）交易则指通过中介经纪人进行的大额链下�
 | EVM | Layerswap | [https://layerswap.io/explorer](https://layerswap.io/explorer) |
 |  | Circle CCTP Bridge | [https://usdc.range.org/usdc](https://usdc.range.org/usdc) |
 |  | CowSwap | [https://explorer.cow.fi](https://explorer.cow.fi) |
+|  | Squid | [https://axelarscan.io](https://axelarscan.io) |
+|  | Orbiter | [https://explorer.orbiter.finance/](https://explorer.orbiter.finance/) |
+|  | TeleSwap | [https://app.teleswap.xyz/transaction-history](https://app.teleswap.xyz/transaction-history) |
 
 #### 方式二 区块链浏览器查看解析
 
@@ -919,7 +929,7 @@ MistTrack MCP 当前支持 10 多个链上分析工具，覆盖风险识别、�
 
 在链上追踪实践中，不同类型的资金流转路径呈现出各自的行为特征。本小节提供部分案例，为读者提供观察链上行为的参考视角。
 
-**案例一 剥离链（Peel Chain）追踪**
+### 案例一 剥离链（Peel Chain）追踪
 
 2016 年 8 月 3 日，知名加密货币交易所 Bitfinex 发公告称，黑客入侵了其系统并盗走约 119,755 枚比特币。事发当时价值约 6000 万美元，按当时价格计算，被盗总额约为 45 亿美元。据 MistTrack 分析，黑客最初将被盗资产分散存储在 2072 个钱包地址中，经 MistTrack 标记如下图：
 
@@ -952,7 +962,7 @@ MistTrack MCP 当前支持 10 多个链上分析工具，覆盖风险识别、�
 * 以大额和小额进行拆分；  
 * 资金停留或混币或进入交易所 / 暗网平台。
 
-**案例二 波场（TRON）网络追踪**
+### 案例二 波场（TRON）网络追踪
 
 某位下载了假钱包 App 导入私钥而被盗的受害者损失 5,326,747 USDT（价值超 530 万美元）。借助 MistTrack 反洗钱追踪系统，我们先对初始黑客地址 [TDs3USWcG5ua4jkGNMGgNZrXrPgw8UMMCt](https://light.misttrack.io/address/USDT-TRC20/TDs3USWcG5ua4jkGNMGgNZrXrPgw8UMMCt) 进行一个大概的特征分析。
 
@@ -1000,9 +1010,95 @@ MistTrack MCP 当前支持 10 多个链上分析工具，覆盖风险识别、�
 
 总结来看，黑客将盗来的 USDT 通过不断地来回兑换，以躲避追踪。尽管黑客绞尽脑汁，但我们仍能通过涉及到的交易所地址对黑客账户进行一些溯源，这里就不再赘述。
 
-值得一提的是，与这类兑换式洗钱路径相比，一些资金盘项目反而采用了更“粗放”的操作方式。例如“鑫慷嘉 DGCX”等典型资金盘平台，在用户界面上显示每位用户有专属的充值地址，实则背后地址统一归平台管理。一旦用户充值完成，资金先是进入一个中间地址，经过一到两层简单切换后归集至平台“资金池”地址，再通过一批频繁切换的中转钱包转向外部可疑地址。这类跑路路径的特点是结构并不复杂，反而有意“简化路径”以快速清空资产。
+### 案例三 通过 Hyperunit 循环清洗 BTC
+
+某个用户被盗 158 BTC，初始黑客地址为 15bCaQNNyEmJSAnZmvKz6kqsRM6wFQfhrL。据 MistTrack 分析，158 BTC 转移情况如下：15bCaQNNyEmJSAnZmvKz6kqsRM6wFQfhrL -> bc1purlmmqy5yw9n37wya7dpc44fv97nvt5tu68l9p73jzc99j2w496sctr66d -> hyperunit.xyz: Hyperliquid-hot Wallet。
 
 ![](./res/p81.png)
+
+根据 Hyperunit 的[说明](https://docs.hyperunit.xyz/how-to/deposit#retrieve-deposit-address)，Unit 会给每个用户生成唯一绑定的 BTC 存款地址，只需将 BTC 转账至此 Unit BTC 存款地址，到账后对应数量的 UBTC 会自动记入用户在 Hyperliquid 的账户。由此可以推断 bc1purlmmqy5yw9n37wya7dpc44fv97nvt5tu68l9p73jzc99j2w496sctr66d 为黑客在 hyperunit.xyz 的存款地址。 此外，Hyperunit 的[官方文档](https://docs.hyperunit.xyz/developers/key-addresses/mainnet/bitcoin#unit-bitcoin-system-address)给出了两条链的相关地址：
+
+![](./res/p82.png)
+
+首先， 我们对第一个 Treasury Address 地址 [0x574bAFCe69d9411f662a433896e74e4F153096FA](https://hypurrscan.io/address/0x574bAFCe69d9411f662a433896e74e4F153096FA) 进行分析，通过时间和金额进行筛选比对，找出了对应[交易](https://hypurrscan.io/tx/0x979b843058f389a39915042a5adac20201f50015f3f6a8753b642f8317f7638e)：
+
+![](./res/p83.png)
+
+这笔交易显示资金转入了地址 [0x001E83b2614ea991D7a8B5e93FC02528c235F2dD](https://hypurrscan.io/address/0x001E83b2614ea991D7a8B5e93FC02528c235F2dD)，该地址发起了 5 笔 BTC 提款交易，分别是 100、10.26、23.55、10.13、14.06 BTC：
+
+![](./res/p84.png)
+
+接着，我们对第二个 Treasury Address 地址 [bc1pdwu79dady576y3fupmm82m3g7p2p9f6hgyeqy0tdg7ztxg7xrayqlkl8j9](https://www.oklink.com/bitcoin/address/bc1pdwu79dady576y3fupmm82m3g7p2p9f6hgyeqy0tdg7ztxg7xrayqlkl8j9) 进行分析，通过时间和金额进行筛选比对，找到了其对应的 BTC 提款交易，提款地址分别为 bc1qhz8fmjjkw4cye8c6a3semqg2s0zfxsgrcuaqu9（[99.99 BTC](https://www.oklink.com/bitcoin/tx/6d0e2089eae15620c740f80cab763d1d3af6bf1d076c322aa1e9f51f45cf2ac8)）、17dk8TBU4XPjK9tP96H54k7M3FvkkjWL2a（[10.25 BTC](https://www.oklink.com/bitcoin/tx/13c782706c97a53ac018e970c50e67e7f356eef90cbf1ea870e8621103094f09)）、19doSxg21yiEbtJrhRzbzYe6zf1UjeyjqA（[23.54 BTC](https://www.oklink.com/bitcoin/tx/f6b7ec93a0a97c80cdc681da00c543e902dc920d13df0d9f6791131437240e05)）、1GudmetYsfc26Z3VRchJp4QbLg4JwoZTDC（[10.12 BTC](https://www.oklink.com/bitcoin/tx/01358b065367dafe82fcf286e731294b73d07560188fae5c804e407da06511e6)）、1LH2zWt54LcYWd9ksAUX5WN9jLwHvdQj9v（[14.06 BTC](https://www.oklink.com/bitcoin/tx/cc300c8f7dd148e3d29b9311e203f9851ffe91657387da35c8671190d9ae2c2b)）：
+
+![](./res/p85.png)
+
+以地址 [bc1qhz8fmjjkw4cye8c6a3semqg2s0zfxsgrcuaqu9](https://www.oklink.com/zh-hans/bitcoin/address/bc1qhz8fmjjkw4cye8c6a3semqg2s0zfxsgrcuaqu9) 为例，继续追踪发现资金再次被转到 Hyperunit：
+
+![](./res/p86.png)
+
+同样地，通过时间和金额进行筛选比对，找出了对应[交易](https://hypurrscan.io/tx/0x55de7bf12492595e5758042a5e8e0d02010800d6bf957830f9a72743e3963348)并发现资金转入地址 [0x0b0437EaB23E05eD294bAcb12ba31aF5E767D495](https://hypurrscan.io/address/0x0b0437EaB23E05eD294bAcb12ba31aF5E767D495)：
+
+![](./res/p87.png)
+
+该地址发起了 4 笔 BTC 提款交易，分别是 58、13.46、15.83、12.7 BTC：
+
+![](./res/p88.png)
+
+类似地，通过时间和金额进行筛选比对，找到其对应的 BTC 提款交易，提款地址分别为 bc1qllxuq4g3uckmrw27w2tc59wx26evycewh6uph7（[57.99 BTC](https://www.oklink.com/bitcoin/tx/63eb27be0ea957f6bfd7025d1cfd52e4a58299711053f8f61f2fc217baaf207d)）、1CvW94gWYtt75seRpBHSaYf6gSZnLuceZ8（[13.46 BTC](https://www.oklink.com/bitcoin/tx/b86451c572f2dd346f4a01a08750ba199666ba9c0878574afcd71def164de56c)）、1D1mVqkdHCNi6sAnNFweFr8WKfFHHqcjcX（[15.83 BTC](https://www.oklink.com/bitcoin/tx/2b34fe133f16efe829d19f9d10f4ee32277352d795e9926990c9917468e1dc4e)）、14qr8DhEduA3rTTZSq4QQX9TeWaDV3rihE（[12.7 BTC](https://www.oklink.com/bitcoin/tx/8213a9af444e65a0d5ff0d6862c07366eae4e8a1e4c5609a7c540b13f94755e6)）：
+
+![](./res/p89.png)
+
+以地址 [bc1qllxuq4g3uckmrw27w2tc59wx26evycewh6uph7](https://www.oklink.com/zh-hans/bitcoin/address/bc1qllxuq4g3uckmrw27w2tc59wx26evycewh6uph7) 为例，继续追踪发现资金再次被转到 Hyperunit：
+
+![](./res/p90.png)
+
+这就形成了一个循环清洗的套路：BTC → Hyperunit 存款 → UBTC → BTC 提款 → 重新转回 Hyperunit，以此方式类推，后续分析不再赘述。整个资金流动过程中，黑客仅仅利用 Hyperunit 的结构，以“循环存款与提款”的方式把原始资金拆散、组合，并不断打回 Hyperunit 进行混淆，让外部观察者难以锁定资产路径。
+
+### 案例四 Stargate Finance 跨链资金来源分析
+
+在一次对 CORE 链跑路项目（Corepound）的分析中，我们注意到相关恶意地址 [0xedfa29a8337b1bbe8a1b897aaf08098b5e0ffabb](https://debank.com/profile/0xedfa29a8337b1bbe8a1b897aaf08098b5e0ffabb/history) 的资金来源如下：
+
+![](./res/p91.png)
+
+不难发现，其中有一笔是来自跨链桥 Stargate Finance 转入的 29,982 USDC，表面上只是“跨链转入”，但要想真正搞清楚来源，就得把跨链前的资金在源链上找出来，即追踪这笔[交易](https://scan.coredao.org/tx/0x9189604ac7a04df052b36b811e0ac3d6ad1ed68fd3d8beb7032aba748078c7e7)的来源：
+
+![](./res/p92.png)
+
+通过 Stargate Finance 的[官方文档](https://docs.stargate.finance/)，了解到其底层协议⽤了 Layerzero 等。首先，我们用 Layerzero 的区块浏览器查看[交易](https://layerzeroscan.com/tx/0x9189604ac7a04df052b36b811e0ac3d6ad1ed68fd3d8beb7032aba748078c7e7)细节，发现 Source Transaction Hash 是 0xb65d5bd84ae85122057449f5824b9b31bf391ae61f40222ed83decab70773400：
+
+![](./res/p93.png)
+
+解析这笔 [Source Transaction Hash](https://arbiscan.io/tx/0xb65d5bd84ae85122057449f5824b9b31bf391ae61f40222ed83decab70773400) 的 Input Data，显示 \_dstEid 为 30153，\_passengers 为 0x0001000000000000000000000000edfa29a8337b1bbe8a1b897aaf08098b5e0ffabb00000006fb11037f00。
+
+从 \_dstEid 可以得出：
+>目标链 id => 30153 => 目标链为 CORE
+
+从 \_passengers 可以得出：
+>CORE 地址 => 0xedfa29a8337b1bbe8a1b897aaf08098b5e0ffabb；
+>⾦额 => 6fb11037f => 16 转 10 进制 => 29981999999 => USDC 的精度 6 => 29981999999/10^6 => 29,981.999999
+
+![](./res/p94.png)
+
+接下来就要往前查：骗子是从哪笔资金往 Stargate 池子里打的？根据经验，骗⼦将资⾦转入 Stargate Finance 的时间一定发生在上述 Source Transaction Hash 之前，通过对 Stargate Finance 链上有关合约的研究，发现很可能在下列合约地址上找到下⼀步线索：
+>Stargate: Pool USDC 0xe8CDF27AcD73a434D661C84887215F7598e7d0d3
+
+刚刚的分析显示，骗子在 CORE 上收到的是 29,981.999999 USDC，通过对 Stargate Finance 跨链相关的 Fee 研究，推断跨链前的 USDC 数量应该是 30,000。我们使⽤ Dune 做筛选分析：
+
+![](./res/p95.png)
+
+定位到一笔匹配的记录：
+
+![](./res/p96.png)
+
+这笔[交易](https://arbiscan.io/tx/0x2843369630c9de5c886d1ec9cfb9135e4fa69e3e8cb68c622c052b8ffadc97cf)清晰地指向了跨链前的资金来源地址为 0xF001c6f30F76265680E266295f97D0bd6E53FeF3：
+
+![](./res/p97.png)
+
+从这起案例可以看到，Stargate Finance、LayerZero 的跨链结构不是追踪的障碍，反而因为 Source Transaction Hash 和跨链参数（dstEid / passengers）透明可读，让我们既锁定跨链后的落点，也更容易顺藤摸到源链。
+
+值得一提的是，与这类兑换式洗钱路径相比，一些资金盘项目反而采用了更“粗放”的操作方式。例如“鑫慷嘉 DGCX”等典型资金盘平台，在用户界面上显示每位用户有专属的充值地址，实则背后地址统一归平台管理。一旦用户充值完成，资金先是进入一个中间地址，经过一到两层简单切换后归集至平台“资金池”地址，再通过一批频繁切换的中转钱包转向外部可疑地址。这类跑路路径的特点是结构并不复杂，反而有意“简化路径”以快速清空资产。
+
+![](./res/p98.png)
 
 钓鱼场景则有所不同。多数钓鱼网站通过伪装成官方 dApp 或钱包授权页面，诱导用户进行授权操作。资金不是通过用户转账流出，而是钓鱼合约主动转出用户授权资产。常见路径为：用户授权某 ERC20 合约 → 钓鱼合约发起 transferFrom 等操作将资产转入攻击者钱包 → 攻击者通过多个转发地址将资产迅速划出 → 混币器或跨链桥进行洗钱。在追踪此类路径时，需要注意识别授权合约的权限边界、交易调用方地址以及后续的资金流转节奏。
 

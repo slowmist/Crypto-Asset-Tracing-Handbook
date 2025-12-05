@@ -4,50 +4,54 @@
 
 - [Introduction](#introduction)
 - [On-chain Tracing](#on-chain-tracing)
-  - [1\. Basic Concepts](#1.-basic-concepts)
-    - [(1) Mainstream Blockchains and Cryptocurrencies](#\(1\)-mainstream-blockchains-and-cryptocurrencies)
-    - [(2) Core Concepts in Tracing](#\(2\)-core-concepts-in-tracing)
-    - [(3) Blockchain Explorers](#\(3\)-blockchain-explorers)
-  - [2\. Tracing Tools](#2.-tracing-tools)
-    - [(1) Introduction to MistTrack](#\(1\)-introduction-to-misttrack)
-    - [(2) MistTrack in Use](#\(2\)-misttrack-in-use)
-    - [(3) Community Tools](#\(3\)-community-tools)
-  - [3\. Common Fund Movement Patterns](#3.-common-fund-movement-patterns)
-    - [(1) Peel Chain](#\(1\)-peel-chain)
-    - [(2) One-to-Many Distribution](#\(2\)-one-to-many-distribution)
-    - [(3) Multi-Hop Transfers](#\(3\)-multi-hop-transfers)
-    - [(4) Mixer Usage](#\(4\)-mixer-usage)
-    - [(5) Cross-Chain Bridge Hops](#\(5\)-cross-chain-bridge-hops)
-    - [(6) Many-to-One Consolidation](#\(6\)-many-to-one-consolidation)
-    - [(7) P2P / OTC](#\(7\)-p2p-/-otc)
-  - [4\. What to Do If You Get Hacked](#4.-what-to-do-if-you-get-hacked)
-    - [(1) Prioritize Loss Prevention](#\(1\)-prioritize-loss-prevention)
-    - [(2) Preserve the Scene](#\(2\)-preserve-the-scene)
-    - [(3) Conduct Preliminary Analysis](#\(3\)-conduct-preliminary-analysis)
-    - [(4) Contact Professional Agencies](#\(4\)-contact-professional-agencies)
-    - [(5) File a Police Report and Seek Legal Assistance Early](#\(5\)-file-a-police-report-and-seek-legal-assistance-early)
-    - [(6) Ongoing Follow-up and Profiling](#\(6\)-ongoing-follow-up-and-profiling)
-    - [(7) Tokens Eligible for Freezing](#\(7\)-tokens-eligible-for-freezing)
-  - [5\. Cross-chain Bridge Tracking Analysis](#5.-cross-chain-bridge-tracking-analysis)
-    - [(1) Introduction to Bridges](#\(1\)-introduction-to-bridges)
-    - [(2) Bridge Analysis](#\(2\)-bridge-analysis)
+  - [Basic Concepts](#basic-concepts)
+    - [Mainstream Blockchains and Cryptocurrencies](#mainstream-blockchains-and-cryptocurrencies)
+    - [Core Concepts in Tracing](#core-concepts-in-tracing)
+    - [Blockchain Explorers](#blockchain-explorers)
+  - [Tracing Tools](#tracing-tools)
+    - [Introduction to MistTrack](#introduction-to-misttrack)
+    - [MistTrack in Use](#misttrack-in-use)
+    - [Community Tools](#community-tools)
+  - [Common Fund Movement Patterns](#common-fund-movement-patterns)
+    - [Peel Chain](#peel-chain)
+    - [One-to-Many Distribution](#one-to-many-distribution)
+    - [Multi-Hop Transfers](#multi-hop-transfers)
+    - [Mixer Usage](#mixer-usage)
+    - [Cross-Chain Bridge Hops](#cross-chain-bridge-hops)
+    - [Many-to-One Consolidation](#many-to-one-consolidation)
+    - [P2P / OTC](#p2p--otc)
+  - [What to Do If You Get Hacked](#what-to-do-if-you-get-hacked)
+    - [Prioritize Loss Prevention](#prioritize-loss-prevention)
+    - [Preserve the Scene](#preserve-the-scene)
+    - [Conduct Preliminary Analysis](#conduct-preliminary-analysis)
+    - [Contact Professional Agencies](#contact-professional-agencies)
+    - [File a Police Report and Seek Legal Assistance Early](#file-a-police-report-and-seek-legal-assistance-early)
+    - [Ongoing Follow-up and Profiling](#ongoing-follow-up-and-profiling)
+    - [Tokens Eligible for Freezing](#tokens-eligible-for-freezing)
+  - [Cross-chain Bridge Tracking Analysis](#cross-chain-bridge-tracking-analysis)
+    - [Introduction to Bridges](#introduction-to-bridges)
+    - [Bridge Analysis](#bridge-analysis)
       - [Method 1: Bridge Explorer](#method-1-bridge-explorer)
       - [Method 2: Blockchain Explorer Analysis](#method-2-blockchain-explorer-analysis)
       - [Method 3: MistTrack Cross-chain Parsing](#method-3-misttrack-cross-chain-parsing)
-  - [6\. Privacy Tool Tracking Analysis](#6.-privacy-tool-tracking-analysis)
-    - [(1) Introduction to Mixers](#\(1\)-introduction-to-mixers)
-    - [(2) Mixer Analysis](#\(2\)-mixer-analysis)
+  - [Privacy Tool Tracking Analysis](#privacy-tool-tracking-analysis)
+    - [Introduction to Mixers](#introduction-to-mixers)
+    - [Mixer Analysis](#mixer-analysis)
       - [Case 1: Tornado Cash Analysis](#case-1-tornado-cash-analysis)
       - [Case 2: Wasabi Coinjoin Analysis](#case-2-wasabi-coinjoin-analysis)
-  - [7\. NFT Tracking Analysis](#7.-nft-tracking-analysis)
-  - [8\. Address Behavior Analysis](#8.-address-behavior-analysis)
-    - [(1) Active Behavior Feature Identification](#\(1\)-active-behavior-feature-identification)
-    - [(2) Address Clustering Analysis](#\(2\)-address-clustering-analysis)
-    - [(3) Risk Behavior Profiling](#\(3\)-risk-behavior-profiling)
-    - [(4) Address Labels and Off-Chain Identity](#\(4\)-address-labels-and-off-chain-identity)
-    - [(5) AI Tools and Analysis](#\(5\)-ai-tools-and-analysis)
-  - [9\. Case Studies](#9.-case-studies)
-  - [10\. Recommendations for Asset Freezing and Recovery](#10.-recommendations-for-asset-freezing-and-recovery)
+  - [NFT Tracking Analysis](#nft-tracking-analysis)
+  - [Address Behavior Analysis](#address-behavior-analysis)
+    - [Active Behavior Feature Identification](#active-behavior-feature-identification)
+    - [Address Clustering Analysis](#address-clustering-analysis)
+    - [Risk Behavior Profiling](#risk-behavior-profiling)
+    - [Address Labels and Off-Chain Identity](#address-labels-and-off-chain-identity)
+    - [AI Tools and Analysis](#ai-tools-and-analysis)
+  - [Case Studies](#case-studies)
+    - [Case 1: Peel Chain Tracking](#case-1-peel-chain-tracking)
+    - [Case 2: TRON Network Tracking](#case-2-tron-network-tracking)
+    - [Case 3: BTC Laundering Loops via Hyperunit](#case-3-btc-laundering-loops-via-hyperunit)
+    - [Case 4: Cross-Chain Source Analysis via Stargate Finance](#case-4-cross-chain-source-analysis-via-stargate-finance)
+  - [Recommendations for Asset Freezing and Recovery](#recommendations-for-asset-freezing-and-recovery)
 - [Conclusion](#conclusion)
 - [Disclaimer](#disclaimer)
 
@@ -71,11 +75,11 @@ In the chapters ahead, we will start from the most fundamental concepts and grad
 
 # On-chain Tracing
 
-## 1\. Basic Concepts
+## Basic Concepts
 
 Blockchain is not mysterious, but it does have its own language and structure that differ from the traditional financial system. Therefore, before starting any on-chain tracing, we need to first understand the most fundamental concepts in blockchain systems. In many cases, the key to determining a fund’s path or identifying suspicious activity lies behind these seemingly simple terms.
 
-### (1) Mainstream Blockchains and Cryptocurrencies
+### Mainstream Blockchains and Cryptocurrencies
 
 * Bitcoin（BTC）
 
@@ -121,7 +125,7 @@ USDT is a stablecoin issued by Tether, pegged to the U.S. dollar at 1 USDT \= 1 
 
 USDC is a stablecoin jointly launched by Circle and Coinbase, emphasizing compliance and transparency, backed by real USD reserves, and subject to regular audits. USDC is also issued on multiple blockchains and is more common in North American markets. Like USDT, it can be frozen in cooperation with law enforcement following formal judicial procedures.
 
-### (2) Core Concepts in Tracing
+### Core Concepts in Tracing
 
 **Wallets**
 
@@ -213,7 +217,7 @@ Because each transaction must fully consume its input UTXOs and generate new out
 
 Understanding these concepts helps us more quickly assess address behavior, risk exposure paths, and potential laundering activities during investigations. Next, we will use a blockchain explorer to examine a real transaction and demonstrate how to locate and interpret public data to improve tracing efficiency.
 
-### (3) Blockchain Explorers
+### Blockchain Explorers
 
 Once you have mastered the basic concepts, the first stop in on-chain tracing is usually the blockchain explorer. Whether you are checking transaction records, viewing an address balance, or verifying the details of a smart contract call, you will inevitably rely on an explorer. Each blockchain has its own dedicated explorer, but the operation logic is generally similar—once you learn how to use one, you can easily adapt to others. Common blockchain explorers include:
 
@@ -246,17 +250,17 @@ In addition to viewing static data, it is equally important to observe the timin
 
 Blockchain explorers are the most basic and commonly used portals for on-chain intelligence, but they serve merely as a “window for reading data” and have their limitations. Therefore, in the next section, we will introduce some additional tools.
 
-## 2\. Tracing Tools
+## Tracing Tools
 
 In real-world applications, we often face highly complex scenarios such as multi-chain asset transfers, fund mixing, and contract interaction analysis. Blockchain explorers, due to their dispersed data and less intuitive presentation, are not well suited for identifying and tracing complex fund flows. As a result, more users and professionals are turning to specialized asset tracing tools to achieve more efficient and systematic on-chain security management. Among these tools, [MistTrack](https://misttrack.io/), an on-chain analysis and anti-money laundering tracing platform developed by SlowMist, is the one we use most and recommend the most. If a blockchain explorer is the “magnifying glass” for on-chain data, then MistTrack is more like an “on-chain intelligence analysis desk” — it not only summarizes data but also helps you interpret it.
 
-### (1) Introduction to MistTrack
+### Introduction to MistTrack
 
 MistTrack provides multiple functions, covering transaction monitoring, risk assessment, address labeling, and transaction behavior analysis, aiming to help users more efficiently identify illicit transactions, trace fund flows, enhance compliance capabilities, and build a full lifecycle security protection system for digital assets. Since its launch in 2022, MistTrack has been widely adopted in the blockchain security industry, serving over 100,000 users — tens of thousands of them paid customers — and playing a critical role in multiple major on-chain security incidents worldwide. It has gradually become an indispensable compliance and risk control tool in the global crypto industry.
 
 ![](./res/p20.png)
 
-s of now, MistTrack has accumulated over 300 million address labels, 1,000+ on-chain entities, 500,000+ threat intelligence data points, and 90 million+ risky addresses. The system supports tracking on 18 mainstream public blockchains and hundreds of different tokens, covering a wide range of asset types and on-chain ecosystems. MistTrack also supports cross-chain tracing, currently compatible with 15 mainstream cross-chain bridge protocols and tools including Chainflip, AllbridgeCore, and LIFI, with continuous expansion underway. Backed by this massive and ever-updating data foundation, MistTrack provides users with strong technical support to tackle complex and evolving on-chain security threats.
+As of now, MistTrack has accumulated over 400 million address labels, 1,000+ on-chain entities, 500,000+ threat intelligence data points, and 90 million+ risky addresses. The system supports tracking on 18 mainstream public blockchains and hundreds of different tokens, covering a wide range of asset types and on-chain ecosystems. MistTrack also supports cross-chain tracing, currently compatible with a variety of mainstream cross-chain bridge protocols and tools including Chainflip, AllbridgeCore, and LIFI, with continuous expansion underway. Backed by this massive and ever-updating data foundation, MistTrack provides users with strong technical support to tackle complex and evolving on-chain security threats.
 
 Core functions of MistTrack include:
 
@@ -269,11 +273,9 @@ Core functions of MistTrack include:
 
 ![](./res/p21.png)
 
-At the same time, to facilitate more efficient address analysis, we have developed the MistTrack OpenAPI for seamless integration into third-party applications.
+At the same time, to facilitate more efficient address analysis, MistTrack has developed the OpenAPI for seamless integration into third-party applications. By calling the OpenAPI, MistTrack will return the label list for a given address, an address overview, risk score, detailed risk information list, transaction investigation results, transaction behavior analysis results, address profile analysis results, and counterparty analysis results.
 
-* OpenAPI interface service: By calling the OpenAPI, MistTrack will return the label list for a given address, an address overview, risk score, detailed risk information list, transaction investigation results, transaction behavior analysis results, address profile analysis results, and counterparty analysis results.
-
-### (2) MistTrack in Use
+### MistTrack in Use
 
 The following is the tracking process of the Cork Protocol attack on May 28, 2025\. The attacker’s address is [0xea6f30e360192bae715599e15e2f765b49e4da98](https://etherscan.io/address/0xea6f30e360192bae715599e15e2f765b49e4da98).
 
@@ -317,7 +319,7 @@ The third entry shows the attacker transferring most of the funds—4,530.59 ETH
 
 ![](./res/p30.png)
 
-### (3) Community Tools
+### Community Tools
 
 Well-known cryptocurrency investigator [ZachXBT](https://t.me/investigations) has publicly shared his commonly used tools for on-chain analysis and open-source intelligence (OSINT) investigations:
 
@@ -349,47 +351,47 @@ Well-known cryptocurrency investigator [ZachXBT](https://t.me/investigations) ha
 
 In the next section, we will explore common fund movement patterns, laying the groundwork for behavioral analysis in tracing paths.
 
-## 3\. Common Fund Movement Patterns
+## Common Fund Movement Patterns
 
 In cryptocurrency asset tracking, understanding the “transfer playbook” of attackers or scammers is a crucial step in determining transaction paths. Although fund movements on-chain may appear to be a series of simple address-to-address transfers, they often follow certain patterns or “behavior templates.” This section summarizes several common fund movement methods to help you quickly identify “non-standard” behavior in practical investigations.
 
-### (1) Peel Chain
+### Peel Chain
 
 A Peel Chain refers to a laundering technique in which large amounts of cryptocurrency are split into a long series of small transactions. This pattern is common in blockchain analysis. It typically starts from a “dirty” address linked to illicit activity. For example, Address A sends funds to Addresses B and C, with the transfer to B being very small while the transfer to C contains most of the value. C then sends a small amount to D and a large amount to E, and so on, until numerous addresses receive tiny amounts of cryptocurrency.
 
 ![](./res/p31.png)
 
-### (2) One-to-Many Distribution
+### One-to-Many Distribution
 
 After receiving a large sum, an attacker may transfer the funds from the main wallet to dozens or even hundreds of intermediary addresses. For example, a single transaction worth 100,000 USDT might be split into 50 transfers of roughly 2,000 USDT each, with each address further splitting and sending out funds. This creates a complex “fan-shaped transfer structure” intended to confuse investigators, obscure transaction paths, dilute the original source of funds, delay investigative response time, and avoid having the entire sum frozen at once. On blockchain visualization tools, this appears as a large central address radiating multiple layers of outward fund flows—a classic early-stage laundering pattern.
 
 ![](./res/p32.png)
 
-### (3) Multi-Hop Transfers
+### Multi-Hop Transfers
 
 Attackers often move funds through rapid, multi-hop transfers, where each address is used only once before quickly sending funds onward, and most do not interact with any on-chain dApps. This intermediary structure, by increasing path length and nesting, disrupts behavior-model detection and delays risk-control responses—especially when executed intensively in the first few minutes after an incident, in order to sever the trail before monitoring systems react.
 
 ![](./res/p33.png)
 
-### (4) Mixer Usage
+### Mixer Usage
 
 Mixers are a classic tool for attackers to break on-chain traceability. The principle is to pool funds with those of other users, process them together, and output assets that cannot be directly matched to their original inputs. Common protocols include Tornado Cash and Wasabi. Mixer transactions often follow standardized patterns, such as uniform deposit sizes, specific waiting times, and synchronized withdrawals. If an address exhibits such characteristics, it is reasonable to suspect laundering activity. Mixers typically obscure paths by using uniform entry points, delayed outputs, and fragmented withdrawals, making “fund in” and “fund out” relationships visually unlinked. When combined with privacy coins (such as XMR) or other anonymity protocols, tracking becomes significantly more difficult.
 
 ![](./res/p34.png)
 
-### (5) Cross-Chain Bridge Hops
+### Cross-Chain Bridge Hops
 
 To evade monitoring and tracing on a given blockchain, attackers may use cross-chain bridges to transfer assets to another network before continuing the movement. Common bridges include THORChain, LayerZero, and Across, with target chains often being networks with weaker investigative coverage (such as TRON). These cross-chain transfers often occur shortly after the attack, and the process may involve asset token changes, path interruptions, and reconstruction of destination addresses, further increasing the difficulty of tracing.
 
 ![](./res/p35.png)
 
-### (6) Many-to-One Consolidation
+### Many-to-One Consolidation
 
 In Ponzi schemes or rug-pull events, attackers often consolidate victim assets into one or a few “core wallets” within a short time, and then use those addresses to execute cross-chain transfers, mixer deposits, or withdrawals. This behavior often occurs when early signs of collapse emerge, representing an emergency asset transfer. In transaction paths, this produces clear consolidation peaks.
 
 ![](./res/p36.png)
 
-### (7) P2P / OTC
+### P2P / OTC
 
 After obscuring the origin of illicit assets via mixers, cross-chain bridges, or fragmented transfers, attackers may turn to P2P platforms, OTC brokers, or offshore non-KYC exchanges to perform “off-chain” operations—converting cryptocurrency into fiat currency or privacy coins. For example, Huione Guarantee, a Southeast Asia–centered escrow platform, is frequently used for this purpose. This process often relies on off-chain deals and identity-masking methods, further breaking the link between on-chain funds and real-world identities.
 
@@ -405,11 +407,11 @@ While these patterns are common, it’s important to note that attackers continu
 
 Next, we will move to the practical aspect: what to do immediately if you or your friend become a victim.
 
-## 4\. What to Do If You Get Hacked
+## What to Do If You Get Hacked
 
 The [Blockchain Dark Forest Selfguard Handbook](https://darkhandbook.io/) notes that “being hacked is a matter of when, not if.” With scams and attacks becoming increasingly rampant, individual users, project teams, and community operators can hardly stay unaffected. So, when assets are actually stolen, what should you do?
 
-### (1) Prioritize Loss Prevention
+### Prioritize Loss Prevention
 
 Once you notice abnormal asset movement, “loss prevention” should always be the top priority, generally in two stages:
 
@@ -429,7 +431,7 @@ Once you notice abnormal asset movement, “loss prevention” should always be 
 * Block potential re-entry points that hackers could exploit, including browser extensions, desktop wallets, and GitHub projects.  
 * Be aware of “fake customer service” or “asset recovery” scams post-theft, and do not trust unsolicited contacts.
 
-### (2) Preserve the Scene
+### Preserve the Scene
 
 A common instinct is to panic, reinstall systems, or delete files, which may destroy crucial evidence. What you need is:
 
@@ -437,7 +439,7 @@ A common instinct is to panic, reinstall systems, or delete files, which may des
 * Record and retain all relevant evidence. For example, if the phishing occurred via Telegram, email, or a website, save the Telegram group chat, usernames, email IP addresses, links, and the original email content.  
 * If the case involves the promotion of a fraudulent platform, retain original materials such as screenshots of KOL posts, content from the official website, and any local documents.
 
-### (3) Conduct Preliminary Analysis
+### Conduct Preliminary Analysis
 
 Even if you are not an expert in blockchain analysis, you can still make basic judgments using blockchain explorers and some simple tools:
 
@@ -447,7 +449,7 @@ Even if you are not an expert in blockchain analysis, you can still make basic j
 * Export reports via MistTrack to get an overview of fund flows even as a non-professional.  
 * Submit hacker addresses to platforms like MistTrack to help prevent others from being scammed.
 
-### (4) Contact Professional Agencies
+### Contact Professional Agencies
 
 For large amounts or complex cases, it’s advisable to contact professional security firms promptly:
 
@@ -461,7 +463,7 @@ On-chain messages have repeatedly succeeded in prompting hackers to return asset
 * [Ethereum](https://slowmist.medium.com/navigating-on-chain-communication-after-a-crypto-hack-74a4fd8b1791)  
 * [Bitcoin](https://slowmist.medium.com/slowmist-emergency-response-guide-for-stolen-funds-on-chain-messaging-btc-edition-13daa24c988b)
 
-### (5) File a Police Report and Seek Legal Assistance Early
+### File a Police Report and Seek Legal Assistance Early
 
 Even if you can track hacker addresses and fund flows precisely, judicial enforcement is ultimately needed for freezing and recovery:
 
@@ -470,7 +472,7 @@ Even if you can track hacker addresses and fund flows precisely, judicial enforc
 * If cross-border funds involve overseas exchanges, contact law firms to prepare international assistance documentation.  
 * Multiple victims can consider collective reporting to increase chances of successful case registration and cooperation.
 
-### (6) Ongoing Follow-up and Profiling
+### Ongoing Follow-up and Profiling
 
 According to “Roca’s Law” (“where there is intrusion, traces will remain”), hackers often leave clues both on-chain and off-chain. Continuously building a “hacker profile” can aid subsequent investigations:
 
@@ -478,7 +480,7 @@ According to “Roca’s Law” (“where there is intrusion, traces will remain
 * Off-chain clues: email registrations, Telegram IDs, IP addresses, device fingerprints.  
 * Social links: connections to known scammers or rug-pull groups.
 
-### (7) Tokens Eligible for Freezing
+### Tokens Eligible for Freezing
 
 Some tokens with official freezing mechanisms include:
 
@@ -495,9 +497,9 @@ These tokens are typically issued centrally, with smart contracts containing “
 
 The next section will dive deeper into tracing — identifying mixing activity, cross-chain paths, complex laundering networks, and reviewing multiple case studies.
 
-## 5\. Cross-chain Bridge Tracking Analysis
+## Cross-chain Bridge Tracking Analysis
 
-### (1) Introduction to Bridges
+### Introduction to Bridges
 
 With the growth of the multi-chain ecosystem, the demand to move assets from one blockchain to another has increased. Cross-chain bridges have emerged as critical infrastructure, connecting assets and data across different chains. Their core function is to allow users to lock assets on one chain and obtain equivalent assets on another chain in the form of Wrapped Tokens, or directly release native assets. Attackers frequently exploit bridges to perform “on-chain jumps,” evading tracking tools and analysis on the source chain.
 
@@ -537,7 +539,7 @@ Traditional on-chain tracking assumes a transparent single-chain logic: one addr
 
 Additionally, many cross-chain protocols are not fully open-source on-chain. Transaction records may reside in Layer 2 logs, Rollup events, or non-standard contract calls. Cross-chain transfers are therefore not simple “transactions” but rather “burn-and-mint” or “lock-and-release” operations. On the blockchain, this creates a visible “gap” in fund flow: funds no longer continue on the source chain but “appear” on another chain. Attackers exploit this opacity to create obfuscated transfer paths, forming complex combinations such as “cross-chain \+ dispersal \+ mixing.”
 
-### (2) Bridge Analysis
+### Bridge Analysis
 
 In crypto asset tracking, “cross-chain” activity has become a standard tactic for fund laundering. However, bridges are not entirely “black boxes.” We can still track cross-chain movements using the following methods:
 
@@ -572,6 +574,9 @@ Common Bridge Explorers:
 | EVM | Layerswap | [https://layerswap.io/explorer](https://layerswap.io/explorer) |
 |  | Circle CCTP Bridge | [https://usdc.range.org/usdc](https://usdc.range.org/usdc) |
 |  | CowSwap | [https://explorer.cow.fi](https://explorer.cow.fi) |
+|  | Squid | [https://axelarscan.io](https://axelarscan.io) |
+|  | Orbiter | [https://explorer.orbiter.finance/](https://explorer.orbiter.finance/) |
+|  | TeleSwap | [https://app.teleswap.xyz/transaction-history](https://app.teleswap.xyz/transaction-history) |
 
 #### Method 2: Blockchain Explorer Analysis
 
@@ -631,9 +636,9 @@ In addition, as shown in the figure above, the source of the address 0x4e398288d
 
 In summary, the three methods described above can be used in combination, which is sufficient to cover the analysis of most cross-chain bridges.
 
-## 6\. Privacy Tool Tracking Analysis
+## Privacy Tool Tracking Analysis
 
-### (1) Introduction to Mixers
+### Introduction to Mixers
 
 In numerous on-chain security incidents, it is common to see stolen assets quickly funneled into a special type of tool—mixers. These tools are originally designed to enhance transaction privacy. Essentially, they pool assets from multiple users, deduct a small service fee, and then return equivalent assets from the pool to each user, breaking the direct mapping between transaction inputs and outputs and thereby achieving transaction privacy. In recent years, mixers have been widely misused to obscure the source of illicit assets, making them one of the most challenging nodes in on-chain asset tracking.
 
@@ -668,7 +673,7 @@ In numerous on-chain security incidents, it is common to see stolen assets quick
   Zcash (ZEC): Uses zk-SNARK zero-knowledge proofs to validate transactions without revealing information about the sender, receiver, or amount.  
   Dash (DASH): Uses PrivateSend technology to mix transactions with others, thereby obfuscating the source of funds.
 
-### (2) Mixer Analysis
+### Mixer Analysis
 
 These tools typically make asset “destination invisible” through technical mechanisms: users send funds into a “pool” that contains assets from other users, and then withdraw “equivalent” but not identical funds from the pool, breaking direct transaction links. The transfer records lack on-chain logical connections, creating analysis gaps. However, mixers are not truly “endpoints.” Through a series of technical and analytical methods, we can still gradually deconstruct their operational characteristics, establish “possible paths,” and create conditions for subsequent tracking and attribution.
 
@@ -802,7 +807,7 @@ It's important to note that once funds enter a mixer, the original path is unlik
 
 Mixers aren't unbreakable; they simply increase the difficulty of analysis. The real challenge lies in attackers' flexible tool combinations and strategy switching. Rather than reproducing each attack path, investigators should build a behavioral signature library to identify potential mixing motives and path structures, thereby taking proactive action at the strategic level.
 
-## 7\. NFT Tracking Analysis
+## NFT Tracking Analysis
 
 NFTs (Non-Fungible Tokens), as a new form of crypto assets, do not typically have the high liquidity of mainstream tokens, but due to their uniqueness, collectible value, and emotional premium, they have become new targets for attackers. Many phishing attacks, rug pull projects, and account theft cases revolve around NFTs, making understanding how to track them an essential part of on-chain analysis.
 
@@ -854,11 +859,11 @@ Using MistTrack with a start time filter set to the theft date of July 21 and fi
 
 The complexity of non-standard assets requires investigators to adopt a multi-dimensional perspective. Beyond the on-chain flow of the NFT itself, it is necessary to consider the context of authorization transactions, address labeling, and the inflow and outflow paths of extracted funds to accurately determine the identity of operators and the profit chain behind NFT movements.
 
-## 8\. Address Behavior Analysis
+## Address Behavior Analysis
 
 Addresses are the most basic unit in on-chain asset tracking. However, a single address often does not represent the real operator. Treating an address merely as a “receiving account” or “transfer node” can overlook underlying control relationships, behavioral patterns, and potential risk characteristics. Address behavior analysis is therefore a key step in transforming fund flows into operator profiles, constructing a “behavioral fingerprint” through each transaction, contract interaction, cross-chain transfer, or mixer attempt, which helps infer operational habits, preferences, and even potential identity.
 
-### (1) Active Behavior Feature Identification
+### Active Behavior Feature Identification
 
 Identifying the basic behavioral features of an address is the starting point of analysis. For example, an address that has been dormant for a long time but suddenly transfers a large amount of assets, or one that makes frequent small transfers in a short period, may indicate unconventional usage, potentially for money laundering, fund routing, or scripted operations:
 
@@ -867,7 +872,7 @@ Identifying the basic behavioral features of an address is the starting point of
 * Fixed Amounts: Many transfers of similar amounts (e.g., 0.9999 ETH), possibly indicating automated scripts or mixer usage.  
 * Short Lifespan: Newly created addresses quickly receive and transfer funds, typical of temporary wallets.
 
-### (2) Address Clustering Analysis
+### Address Clustering Analysis
 
 Attackers rarely use a single address. Behavior clustering involves grouping addresses likely controlled by the same entity. Patterns such as consistent activity time, use of specific platforms, repeated transactions in the same stablecoin, or recurring cross-chain paths can form a distinct on-chain “fingerprint.” Multiple addresses showing similar habits, counterparties, and transaction rhythms can help establish these fingerprints and identify actors:
 
@@ -877,7 +882,7 @@ Attackers rarely use a single address. Behavior clustering involves grouping add
 * Transaction Parameter Similarity: Repeated patterns in gas limits, slippage, or fee preferences can be used as clustering features.  
 * Address Naming Patterns: Some groups create addresses following identifiable naming schemes, e.g., in the Nobitex attack, Gonjeshke Darande used addresses with provocative keywords and repeated structures. (TKFuckiRGCTerroristsNoBiTEXy2r7mNX, 0xffFFfFFffFFffFfFffFFfFfFfFFFFfFfFFFFDead, 1FuckiRGCTerroristsNoBiTEXXXaAovLX)
 
-### (3) Risk Behavior Profiling
+### Risk Behavior Profiling
 
 Determining if an address is “risky” requires analyzing its overall behavior, not just its interactions:
 
@@ -887,7 +892,7 @@ Determining if an address is “risky” requires analyzing its overall behavior
 * Suspicious Interactions: Calling failed contract functions, interacting with scam or “airdrop” tokens, or overlapping with known malicious addresses.  
 * Scripted Operations: Deploying phishing contracts or automatically extracting authorized assets, typical in rug pulls or phishing drainers.
 
-### (4) Address Labels and Off-Chain Identity
+### Address Labels and Off-Chain Identity
 
 While blockchain addresses do not directly correspond to real identities, cross-analysis with off-chain data can gradually reconstruct likely operator profiles. Platforms like MistTrack use extensive address label databases and fund flow analysis, combined with external sources, to build a multi-dimensional identity assessment:
 
@@ -905,7 +910,7 @@ Attackers often use various anonymity tools off-chain to further hide identity:
 
 While these anonymous services don't leave direct on-chain traces themselves, the indirect traces they leave within the attack chain still hold valuable traceability. By combining platform-side login records, operation logs, KYC data, social account activity, and on-chain transfer times, frequency, and tools used, professional researchers can build their own hacker information databases and compare them with anonymous email addresses, VPN accounts, and other information within the database. This provides a powerful off-chain path for identity association and behavior tracing when on-chain tracing is blocked.
 
-### (5) AI Tools and Analysis
+### AI Tools and Analysis
 
 Modern on-chain analytics platforms are advancing automation and intelligence in behavioral profiling. [MistTrack MCP](https://mcp.so/server/misttrackmcp/slowmist), for example, allows natural language API calls through clients like Claude or Cursor to generate address profiles, risk scores, and transaction graphs, improving efficiency and accessibility.
 
@@ -923,11 +928,11 @@ Building on-chain identity profiles does not necessarily mean real-world identif
 
 Through continuous analysis of transfers, contract interactions, and cross-chain activity, fragmented wallet addresses can be linked into coherent entity profiles. Just like detectives scrutinize subtle crime scene clues, on-chain analysts must track the logic behind each transfer, authorization, and cross-chain movement to find connections across cases, ultimately building behavioral networks and identity webs. These profiles support tracing paths, reconstructing network structures, and providing reliable evidence for exchanges, project teams, or law enforcement to freeze assets and issue risk warnings.
 
-## 9\. Case Studies
+## Case Studies
 
 In on-chain tracking practice, different types of fund flow paths exhibit distinct behavioral characteristics. This section presents selected cases to provide readers with reference perspectives for observing on-chain behavior.
 
-**Case 1: Peel Chain Tracking**
+### Case 1: Peel Chain Tracking
 
 On August 3, 2016, the well-known cryptocurrency exchange Bitfinex announced a hack that resulted in the theft of approximately 119,755 BTC. At that time, this amounted to roughly $60 million, or about $4.5 billion in total value based on contemporary pricing. MistTrack analysis showed that the stolen assets were initially dispersed across 2,072 wallet addresses, which were labeled as follows:
 
@@ -964,7 +969,7 @@ Although the transfer of small amounts of funds is omitted, we can still clearly
 * Split into large and small amounts;  
 * Funds are parked or mixed or enter exchanges/darknet platforms.
 
-**Case 2: TRON Network Tracking**
+### Case 2: TRON Network Tracking
 
 A victim who imported their private key into a fake wallet app lost 5,326,747 USDT (over 5.3 million USD). Using the MistTrack anti-money laundering (AML) tracking system, we first analyzed the hacker’s initial address: [TDs3USWcG5ua4jkGNMGgNZrXrPgw8UMMCt](https://light.misttrack.io/address/USDT-TRC20/TDs3USWcG5ua4jkGNMGgNZrXrPgw8UMMCt).
 
@@ -1010,11 +1015,97 @@ That address then swapped TRX back into USDT to TECs2MpZN9HZH5noGzGTF8LBLhxZt5g4
 
 ![](./res/p80.png)
 
+### Case 3: BTC Laundering Loops via Hyperunit
+
+A victim lost 158 BTC to theft, with the initial hacker address identified as 15bCaQNNyEmJSAnZmvKz6kqsRM6wFQfhrL. According to MistTrack’s analysis, the stolen BTC was moved as follows: 15bCaQNNyEmJSAnZmvKz6kqsRM6wFQfhrL -> bc1purlmmqy5yw9n37wya7dpc44fv97nvt5tu68l9p73jzc99j2w496sctr66d -> hyperunit.xyz: Hyperliquid-hot Wallet.
+
+![](./res/p81.png)
+
+According to Hyperunit’s [description](https://docs.hyperunit.xyz/how-to/deposit#retrieve-deposit-address), each user is assigned a unique BTC deposit address. When BTC is transferred to this deposit address, an equivalent amount of UBTC is automatically credited to the user’s Hyperliquid account. Based on this mechanism, we can infer that bc1purlmmqy5yw9n37wya7dpc44fv97nvt5tu68l9p73jzc99j2w496sctr66d was the hacker’s deposit address on Hyperunit. Hyperunit’s [documentation](https://docs.hyperunit.xyz/developers/key-addresses/mainnet/bitcoin#unit-bitcoin-system-address) also lists two treasury addresses:
+
+![](./res/p82.png)
+
+We first analyzed Treasury Address 1 [0x574bAFCe69d9411f662a433896e74e4F153096FA](https://hypurrscan.io/address/0x574bAFCe69d9411f662a433896e74e4F153096FA). After filtering transactions by timestamp and amount, we located the matching [transaction](https://hypurrscan.io/tx/0x979b843058f389a39915042a5adac20201f50015f3f6a8753b642f8317f7638e):
+
+![](./res/p83.png)
+
+The funds were transferred to [0x001E83b2614ea991D7a8B5e93FC02528c235F2dD](https://hypurrscan.io/address/0x001E83b2614ea991D7a8B5e93FC02528c235F2dD). This address initiated five BTC withdrawal transactions, with the following amounts: 100 BTC, 10.26 BTC, 23.55 BTC, 10.13 BTC and 14.06 BTC.
+
+![](./res/p84.png)
+
+Next, we analyzed Treasury Address 2 [bc1pdwu79dady576y3fupmm82m3g7p2p9f6hgyeqy0tdg7ztxg7xrayqlkl8j9](https://www.oklink.com/bitcoin/address/bc1pdwu79dady576y3fupmm82m3g7p2p9f6hgyeqy0tdg7ztxg7xrayqlkl8j9). After filtering transactions by timestamp and amount, we found the corresponding BTC withdrawal transactions, with the following withdrawal addresses: bc1qhz8fmjjkw4cye8c6a3semqg2s0zfxsgrcuaqu9 ([99.99 BTC](https://www.oklink.com/bitcoin/tx/6d0e2089eae15620c740f80cab763d1d3af6bf1d076c322aa1e9f51f45cf2ac8)), 17dk8TBU4XPjK9tP96H54k7M3FvkkjWL2a ([10.25 BTC](https://www.oklink.com/bitcoin/tx/13c782706c97a53ac018e970c50e67e7f356eef90cbf1ea870e8621103094f09)), 19doSxg21yiEbtJrhRzbzYe6zf1UjeyjqA ([23.54 BTC](https://www.oklink.com/bitcoin/tx/f6b7ec93a0a97c80cdc681da00c543e902dc920d13df0d9f6791131437240e05)), 1GudmetYsfc26Z3VRchJp4QbLg4JwoZTDC ([10.12 BTC](https://www.oklink.com/bitcoin/tx/01358b065367dafe82fcf286e731294b73d07560188fae5c804e407da06511e6)) and 1LH2zWt54LcYWd9ksAUX5WN9jLwHvdQj9v ([14.06 BTC](https://www.oklink.com/bitcoin/tx/cc300c8f7dd148e3d29b9311e203f9851ffe91657387da35c8671190d9ae2c2b)):
+
+![](./res/p85.png)
+
+Taking [bc1qhz8fmjjkw4cye8c6a3semqg2s0zfxsgrcuaqu9](https://www.oklink.com/zh-hans/bitcoin/address/bc1qhz8fmjjkw4cye8c6a3semqg2s0zfxsgrcuaqu9) as an example, further tracing revealed that the funds were transferred to Hyperunit once again: 
+
+![](./res/p86.png)
+
+By filtering on timestamp and amount, we located the corresponding [transaction](https://hypurrscan.io/tx/0x55de7bf12492595e5758042a5e8e0d02010800d6bf957830f9a72743e3963348) showing the funds flowing into [0x0b0437EaB23E05eD294bAcb12ba31aF5E767D495](https://hypurrscan.io/address/0x0b0437EaB23E05eD294bAcb12ba31aF5E767D495):
+
+![](./res/p87.png)
+
+This address then initiated four BTC withdrawal transactions: 58 BTC, 13.46 BTC, 15.83 BTC and 12.7 BTC:
+
+![](./res/p88.png)
+
+After filtering transactions by timestamp and amount, we found the corresponding BTC withdrawal transactions, with the following withdrawal addresses: bc1qllxuq4g3uckmrw27w2tc59wx26evycewh6uph7 ([57.99 BTC](https://www.oklink.com/bitcoin/tx/63eb27be0ea957f6bfd7025d1cfd52e4a58299711053f8f61f2fc217baaf207d)), 1CvW94gWYtt75seRpBHSaYf6gSZnLuceZ8 ([13.46 BTC](https://www.oklink.com/bitcoin/tx/b86451c572f2dd346f4a01a08750ba199666ba9c0878574afcd71def164de56c)), 1D1mVqkdHCNi6sAnNFweFr8WKfFHHqcjcX ([15.83 BTC](https://www.oklink.com/bitcoin/tx/2b34fe133f16efe829d19f9d10f4ee32277352d795e9926990c9917468e1dc4e)) and 14qr8DhEduA3rTTZSq4QQX9TeWaDV3rihE ([12.7 BTC](https://www.oklink.com/bitcoin/tx/8213a9af444e65a0d5ff0d6862c07366eae4e8a1e4c5609a7c540b13f94755e6)):
+
+![](./res/p89.png)
+
+Using [bc1qllxuq4g3uckmrw27w2tc59wx26evycewh6uph7](https://www.oklink.com/zh-hans/bitcoin/address/bc1qllxuq4g3uckmrw27w2tc59wx26evycewh6uph7) as an example, we once again observed BTC being cycled back into Hyperunit:
+
+![](./res/p90.png)
+
+This reveals a repetitive laundering loop: BTC → Hyperunit deposit → UBTC → BTC withdrawal → BTC re-deposited into Hyperunit → … (loop continues). Throughout the entire flow, the attacker leveraged Hyperunit’s system to break down, recombine, and repeatedly cycle the original funds, sending them back to Hyperunit multiple times to obscure the movement of assets. This “looped deposit-and-withdrawal” pattern makes the tracking trail increasingly fragmented and significantly obscures the actual destination of the stolen BTC.
+
+### Case 4: Cross-Chain Source Analysis via Stargate Finance
+
+In analyzing the Corepound scam on the CORE chain, we noticed the following source of funds for the associated malicious address [0xedfa29a8337b1bbe8a1b897aaf08098b5e0ffabb](https://debank.com/profile/0xedfa29a8337b1bbe8a1b897aaf08098b5e0ffabb/history):
+
+![](./res/p91.png)
+
+One [inflow](https://scan.coredao.org/tx/0x9189604ac7a04df052b36b811e0ac3d6ad1ed68fd3d8beb7032aba748078c7e7) stood out: 29,982 USDC received via the Stargate Finance. Although it appeared on-chain simply as a “cross-chain transfer,” identifying the true origin requires tracing the funds on the source chain, meaning we must locate the transaction before bridging occurred:
+
+![](./res/p92.png)
+
+According to Stargate Finance [documentation](https://docs.stargate.finance/), the underlying protocol uses LayerZero, among others. We therefore queried the [transaction details](https://layerzeroscan.com/tx/0x9189604ac7a04df052b36b811e0ac3d6ad1ed68fd3d8beb7032aba748078c7e7) using the LayerZero block explorer, which revealed the Source Transaction Hash: 0xb65d5bd84ae85122057449f5824b9b31bf391ae61f40222ed83decab70773400.
+
+![](./res/p93.png)
+
+Decoding the Input Data of this [Source Transaction Hash](https://arbiscan.io/tx/0xb65d5bd84ae85122057449f5824b9b31bf391ae61f40222ed83decab70773400) showed: \_dstEid = 30153, \_passengers = 0x0001000000000000000000000000edfa29a8337b1bbe8a1b897aaf08098b5e0ffabb00000006fb11037f00.
+
+From \_dstEid, we can deduce:
+>destination chain id => 30153 => destination chain is CORE
+
+From \_passengers, we can deduce:
+>CORE address => 0xedfa29a8337b1bbe8a1b897aaf08098b5e0ffabb;
+>Amount => 6fb11037f => Hexadecimal to decimal => 29981999999 => USDC 6-digit precision => 29981999999/10^6 => 29,981.999999
+
+![](./res/p94.png)
+
+After confirming the bridging amount, the next step is to determine the source of the funds the scammers deposited into Stargate before the aforementioned Source Transaction Hash. Based on experience, the scammers transferred funds to Stargate Finance before the aforementioned Source Transaction Hash. Through research on the relevant contracts on the Stargate Finance, we found that the next clue is likely to be found at the contract address:
+>Stargate: Pool USDC 0xe8CDF27AcD73a434D661C84887215F7598e7d0d3
+
+Since the attacker received 29,981.999999 USDC on CORE. Based on research into Stargate Finance's cross-chain related fees, it can be inferred that the pre-bridge USDC amount should be 30,000. Using Dune Analytics for targeted query filtering:
+
+![](./res/p95.png)
+
+we identified a matching record:
+
+![](./res/p96.png)
+
+This [transaction](https://arbiscan.io/tx/0x2843369630c9de5c886d1ec9cfb9135e4fa69e3e8cb68c622c052b8ffadc97cf) clearly points to the address 0xF001c6f30F76265680E266295f97D0bd6E53FeF3 as the source of funds before the cross-chain transaction.
+
+![](./res/p97.png)
+
+This case illustrates that Stargate Finance and LayerZero do not hinder blockchain tracing. On the contrary, the transparency of the Source Transaction Hash and cross-chain parameters (dstEid / passengers) not only enables precise identification of the post-bridge destination but also provides a clear path to trace funds back to their origin on the source chain.
+
 In summary, the hackers repeatedly exchanged the stolen USDT back and forth to evade tracking. Despite the hackers' best efforts, we can still trace the hacker accounts through the exchange addresses involved, which we will not elaborate on here.
 
 It's worth noting that, compared to these exchange-based money laundering schemes, some Ponzi schemes employ more crude methods. For example, typical Ponzi scheme platforms like Xinkangjia DGCX display a unique deposit address for each user on their user interface, but in reality, all addresses are managed by the platform. Once a user deposits, the funds first enter an intermediate address, undergo one or two simple transfers, and are then aggregated into the platform's "fund pool" address. From there, they are transferred to external, suspicious addresses through a series of frequently switching intermediate wallets. This type of absconding scheme is characterized by its uncomplicated structure, deliberately simplifying the process to quickly liquidate assets.
 
-![](./res/p81.png)
+![](./res/p98.png)
 
 Phishing scenarios are somewhat different. Most phishing websites disguise themselves as official DApp or wallet authorization pages to trick users into authorizing transactions. Funds don't flow out through user transfers, but rather through the phishing contract itself. A common path follows: the user authorizes an ERC20 contract, the phishing contract initiates operations like "transferFrom" to transfer funds to the attacker's wallet, the attacker rapidly withdraws the funds through multiple forwarding addresses, and the funds are laundered using a mixer or cross-chain bridge. When tracking this path, it's important to identify the authorization contract's permission boundaries, the transaction caller's address, and the subsequent flow of funds.
 
@@ -1022,7 +1113,7 @@ Attack paths in the DeFi context are even more complex, often combining smart co
 
 Regardless of the scenario, reviewing transactions isn't just about looking at transfer charts; it's about identifying key nodes: At what point does control transfer? When do suspicious authorizations or contract interactions occur? Is there any involvement from a centralized platform? These insights not only influence the depth of the tracing process but also the likelihood of subsequent freezing and further investigations involving law enforcement agencies.
 
-## 10\. Recommendations for Asset Freezing and Recovery
+## Recommendations for Asset Freezing and Recovery
 
 When on-chain tracking confirms that a portion of stolen or fraudulent funds has entered centralized exchanges (CEXs), asset freezing and recovery become the next critical steps. However, in practice, this process is far more complex than it might appear, involving multiple factors such as legal procedures, the willingness of exchanges to cooperate, and cross-border enforcement mechanisms.
 
